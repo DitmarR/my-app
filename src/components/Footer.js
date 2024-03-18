@@ -1,56 +1,49 @@
 import React from 'react';
-import 'tailwindcss/tailwind.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faYoutube, faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-// import CustomLink from './CustomLink';
+import CustomLink from './CustomLink';
+import './pages/footer.css';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex justify-center items-center gap-4 text-white py-4 bg-gray-800">
-      <a href="https://www.linkedin.com/" target="_blank">
-        <FontAwesomeIcon icon={faLinkedin} />
-      </a>
-     <a href="https://www.youtube.com/" target="_blank">
-        <FontAwesomeIcon icon={faYoutube} />
-      </a>
-      <a href="https://twitter.com/" target="_blank">
-        <FontAwesomeIcon icon={faTwitter} />
-      </a>
-      <a href="https://www.instagram.com/" target="_blank">
-        <FontAwesomeIcon icon={faInstagram} />
-      </a>
-      <a href="https://www.facebook.com/" target="_blank">
-        <FontAwesomeIcon icon={faFacebook} />
-      </a>
+    <footer className="flex flex-col justify-center items-center bg-lightblue py-4">
+      <div className="Top-Footer">
+        <div className="flex justify-center gap-4">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} className="social-media-icon bg-white rounded-full p-2" />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faYoutube} className="social-media-icon bg-white rounded-full p-2" />
+          </a>
+          <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faTwitter} className="social-media-icon bg-white rounded-full p-2" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faInstagram} className="social-media-icon bg-white rounded-full p-2" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faFacebook} className="social-media-icon bg-white rounded-full p-2" />
+          </a>
+        </div>
 
-      {/* <ul>
-        <li>
-        <CustomLink to="/Home">Home</CustomLink>
-        </li>
-        <li>
-        <CustomLink to="/About">About</CustomLink>
-        </li>
-        <li>
-        <CustomLink to="/Events">Recipes</CustomLink>
-        </li>
-        <li>
-        <CustomLink to="/Tags">Tags</CustomLink>
-        </li>
-        <li>
-        <CustomLink to="/Contact">Contact</CustomLink>
-        </li>
-      </ul> */}
-      <p className="">Home</p>
-      <p className="">About</p>
-      <p className="">Recipes</p>
-      <p className="">Tags</p>
-      <p className="">Contact</p>
-      <p>
-        All Right Reserved  ©
-        <span id="currentYear" className="ml-1">{currentYear}</span>
-        Simple Bites</p>
+        <div className="test">
+          <ul className="mt-4 flex flex-row justify-center items-center">
+            <CustomLink to="/Home" className="mx-4">&nbsp;&nbsp;Home &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</CustomLink>
+            <CustomLink to="/About" className="mx-4">About &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</CustomLink>
+            <CustomLink to="/Recipes" className="mx-4">Recipes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</CustomLink>
+            <CustomLink to="/Contact" className="mx-4">Contact &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</CustomLink>
+          </ul>
+
+
+        </div>
+
+      </div>
+
+      <div className="Bottom-Footer">
+        All Rights Reserved © <span id="currentYear">{currentYear}</span>&nbsp;Simple Bites
+      </div>
     </footer>
   );
 }
