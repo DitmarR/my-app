@@ -1,30 +1,271 @@
 .Bottom-Footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     background-color: #304A76;
     color: white;
-    padding: 20px; 
+    padding: 20px;
     text-align: center;
     width: 100%;
     display: flex;
-    flex-direction: row; 
-    justify-content: center; 
-    align-items: center; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .Top-Footer {
-    position: fixed;
-    bottom: 0;
+    position: sticky;
+    bottom: -1;
     left: 0;
     padding: 35px;
-    margin-bottom: 60px; 
     background-color: #365486;
-    width: 100%; 
+    width: 100%;
     flex-direction: row !important;
-    justify-content: center; 
+    justify-content: center;
     color: white;
     font-size: 20px;
+    gap: 20px;
 }
 
 
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #365486;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    background-image: url('../../../public/navbackground2.png');
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.background-image {
+    opacity: 0.5;
+}
+
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.logo {
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        margin-left: 50px;
+    }
+}
+
+
+.slogan {
+    background: #365486;
+    color: white;
+    padding: 1px;
+    padding-right: 20px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+
+
+.slogan h2,
+.slogan p {
+    margin: 0;
+}
+
+.Simple {
+    color: #7FC7D9;
+    font-size: 35px;
+}
+
+.Flavor {
+    color: white;
+    font-size: 22px;
+}
+
+.bottom-nav {
+    width: 100%;
+    position: static;
+    /* or remove the position property */
+    top: 1;
+    /* This should be removed */
+    left: 0;
+    /* This should be removed */
+    background-color: #7FC7D9;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+
+
+
+.nav-btm-content {
+    color: white;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    font-size: 22px;
+    color: #365486;
+    gap: 65px;
+    display: inline-block;
+    padding-top: 8px;
+
+    @media screen and (max-width: 767px) {
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+}
+
+.nav-btm-content h2 {
+    margin-right: 10px;
+}
+
+.login-box {
+    background-color: #5a8daf;
+    padding: 5px 5px;
+    position: sticky;
+    right: 0;
+    top: 203px;
+    border-radius: 10px;
+    margin-right: 100px;
+
+    @media screen and (max-width: 850px) {
+        margin-right: 50px;
+    }
+}
+
+
+.login-box img {
+    display: inline-block;
+    width: 35px;
+    height: 40px;
+    margin-right: 5px
+}
+
+.login-box span {
+    color: white;
+}
+
+.Home {
+    padding-left: 175px;
+
+
+    @media screen and (max-width: 767px) {
+        padding-left: 20px;
+    }
+}
+
+.contact {
+    padding-top: 200px;
+}
+
+.login {
+    margin-top: -50px;
+    color: white;
+    padding-bottom: 50px;
+    opacity: 0;
+}
+
+.logo2 {
+    margin-bottom: 0px;
+    margin-left: 240px;
+}
+
+/* footer.css */
+
+/* Styling for custom links */
+.custom-link {
+    color: blue;
+    /* Blue text */
+    font-weight: bold;
+    /* Bold text */
+}
+
+/* Styling for custom container */
+.custom-container {
+    background-color: #ccc;
+    /* Gray background */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 665px;
+    min-height: 400px;
+    /* Minimum height */
+    position: relative;
+}
+
+/* Styling for login text */
+.login {
+    color: #333;
+    /* Dark blue text */
+}
+
+/* Styling for logo */
+.logo-container {
+    text-align: center;
+}
+
+
+
+/* Styling for input fields */
+.custom-input {
+    width: 541px;
+    padding: 10px;
+    margin: 5px auto; /* Center the input horizontally */
+    border: 1px solid #365486;
+    border-radius: 0;
+    background-color: #BEBEBE;
+    /* Dark gray background */
+    color: #fff;
+    /* White text */
+    text-align: left; /* Adjusted to start typing from the left */
+}
+
+
+/* Styling for login button */
+.custom-button {
+    width: 541px;
+    padding: 10px;
+    margin: 10px auto; /* Center the button horizontally */
+    border: none;
+    border-radius: 5px;
+    background-color: #365486 !important;
+    color: #fff;
+    /* White text */
+    font-weight: bold;
+    /* Bold text */
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #004080;
+    /* Darker blue on hover */
+}
+
+/* Extra long at the bottom */
+.custom-container {
+    margin-bottom: 50px;
+    /* Adjust margin as needed */
+}
+
+.blue {
+    font-size: 25px;
+    color: #365486;
+    font-weight: bold;
+}

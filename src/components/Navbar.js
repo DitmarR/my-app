@@ -1,24 +1,42 @@
 import React from 'react';
 import CustomLink from './CustomLink';
+import './pages/footer.css';
 
 export default function Navbar() {
      return (
           <nav className="nav">
-               <img src='/navbackground.png' alt='hi' style={{ width: '150px', height: '150px', marginRight: '5px' }}  />
-               <img src='/logo.png' alt='hi' style={{ width: '150px', height: '150px', marginRight: '5px' }}/>
-               <h2> Simple Bites</h2>
-               <p>Flavor, Simplified</p>
+               <div className="background">
+                    <div className="nav-content">
+                         <img src='/logo.png' className="logo" alt='hi' style={{ width: '150px', height: '150px', marginRight: '5px' }} />
+                         <div className="slogan"><h2 className="Simple"> Simple Bites</h2>
+                              <p className="Flavor">Flavor, Simplified</p>
+                         </div>
+                    </div>
+               </div>
 
-               <ul>
-                    <CustomLink to="/Home">Home</CustomLink>
-                    <CustomLink to="/About">About</CustomLink>
-                    <CustomLink to="/Recipes">Recipes</CustomLink>
-                    <CustomLink to="/Contact">Contact</CustomLink>
-                    <CustomLink to="/Login">
-                         <img src="/login.png" alt="Login"  style={{ width: '35px', height: '40px', marginRight: '5px' }}/>
-                               Login
-                    </CustomLink>
-               </ul>
+
+               <nav>
+                    <div className='bottom-nav'>
+
+                         <ul>
+                              <div className="nav-btm-content">
+                                   <CustomLink to="/Home" className="Home">Home</CustomLink>
+                                   <CustomLink to="/About">About</CustomLink>
+                                   <CustomLink to="/Recipes">Recipes</CustomLink>
+                                   <CustomLink to="/Contact">Contact</CustomLink>
+                                   <CustomLink to="/Login">
+
+                                        <div className="login-box">
+                                             <img src="/login.png" alt="Login" />
+                                             <span className="text-white">Login</span>
+                                        </div>
+
+                                   </CustomLink>
+                              </div>
+                         </ul>
+                    </div>
+
+               </nav>
           </nav>
      );
 }

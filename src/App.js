@@ -6,12 +6,14 @@ import Recipes from "./components/pages/Recipes"
 
 import Contact from "./components/pages/Contact";
 import Footer from './components/Footer';
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar";
 import Login from "./components/pages/Login";
 
-// import TailwindTest from "./components/TailWindTest";
+import "../src/AppTw.css";
 
-//import 'tailwindcss'
+
+
+// import '../tailwind.config'
 
 function App() {
   return (
