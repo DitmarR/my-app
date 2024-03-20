@@ -1,9 +1,12 @@
 import React from 'react';
-import './footer.css';
 
 export default function Contact() {
-     return <div><h1 className="contact">Contact</h1>
-     </div>
+     return <div class="flex justify-center items-center h-screen">
+     <h1 class="text-3xl text-black">Contact</h1>
+   </div>
+   
+   
+   
 }
 
 

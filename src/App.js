@@ -8,6 +8,7 @@ import Contact from "./components/pages/Contact";
 import Footer from './components/Footer';
 import Navbar from "./components/navbar";
 import Login from "./components/pages/Login";
+import Register from "./components/pages/register";
 
 import "../src/AppTw.css";
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/Recipes" element={<Recipes />} />
         <Route path="/Contact" element={<Contact />} /> 
         <Route path="/Login" element={<Login />} /> 
+        <Route path="/Register" element={<Register />} /> 
       </Routes>
       <Footer /> 
     </div>

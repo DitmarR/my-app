@@ -139,14 +139,30 @@
 .login-box {
     background-color: #5a8daf;
     padding: 5px 5px;
-    position: sticky;
-    right: 0;
-    top: 203px;
+    position: relative; /* Change position to relative */
+    /* top: 203px; */
     border-radius: 10px;
-    margin-right: 100px;
+    margin-left: 1200px; /* Initial margin */
 
-    @media screen and (max-width: 850px) {
-        margin-right: 50px;
+    @media screen and (max-width: 1800px) {
+        margin-left: 10px; /* Adjust margin for smaller screens */
+    }
+
+    @media screen and (max-width: 1600px) {
+        margin-left: 100px; /* Adjust margin for smaller screens */
+    }
+
+    @media screen and (max-width: 1400px) {
+        margin-left: 50px; /* Adjust margin for smaller screens */
+    }
+    /* Adjust position for smaller screens */
+    @media screen and (max-width: 1200px) {
+        margin-left: 50px; /* Adjust margin for smaller screens */
+    }
+
+    /* Adjust position for even smaller screens */
+    @media screen and (max-width: 576px) {
+        margin-left: 20px; /* Further adjust margin for smaller screens */
     }
 }
 
@@ -187,85 +203,189 @@
     margin-left: 240px;
 }
 
-/* footer.css */
 
-/* Styling for custom links */
+
 .custom-link {
     color: blue;
-    /* Blue text */
+
     font-weight: bold;
-    /* Bold text */
+
 }
 
-/* Styling for custom container */
+
 .custom-container {
     background-color: #ccc;
-    /* Gray background */
+
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
     width: 665px;
     min-height: 400px;
-    /* Minimum height */
+
     position: relative;
+    padding-bottom: 150px !important;
 }
 
-/* Styling for login text */
+
 .login {
     color: #333;
-    /* Dark blue text */
+
 }
 
-/* Styling for logo */
+
 .logo-container {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 
 
-/* Styling for input fields */
+
 .custom-input {
     width: 541px;
     padding: 10px;
-    margin: 5px auto; /* Center the input horizontally */
+    margin: 5px auto;
     border: 1px solid #365486;
     border-radius: 0;
     background-color: #BEBEBE;
-    /* Dark gray background */
-    color: #fff;
-    /* White text */
-    text-align: left; /* Adjusted to start typing from the left */
+
+    color: black;
+
+    text-align: left;
 }
 
 
-/* Styling for login button */
+
 .custom-button {
     width: 541px;
-    padding: 10px;
-    margin: 10px auto; /* Center the button horizontally */
+    padding: 1px;
+    margin: 10px auto;
     border: none;
-    border-radius: 5px;
+    border-radius: 0px;
     background-color: #365486 !important;
     color: #fff;
-    /* White text */
+
     font-weight: bold;
-    /* Bold text */
+
     cursor: pointer;
+    font-size: 25px;
 }
 
 .custom-button:hover {
     background-color: #004080;
-    /* Darker blue on hover */
 }
 
-/* Extra long at the bottom */
 .custom-container {
     margin-bottom: 50px;
-    /* Adjust margin as needed */
+
 }
 
 .blue {
-    font-size: 25px;
+    font-size: 35px;
     color: #365486;
     font-weight: bold;
+    margin-top: -15px;
+
+}
+
+.custom-label {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.check-box {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.custom-checkbox {
+    margin-right: 1px;
+}
+
+.data {
+    margin-left: -75px;
+    
+}
+
+.custom-input2 {
+    padding: 10px;
+    margin: 5px;
+     margin-right: 10px;
+    margin-left: 40px; 
+    border: 1px solid #365486;
+    border-radius: 0;
+    background-color: #BEBEBE;
+    color: black;
+    text-align: left;
+    width: 244px;
+}
+
+
+@media screen and (max-width: 576px) {
+    .custom-input2 {
+        width: 100%; 
+        margin: 5px 0; 
+    }
+}
+
+.Enter {
+    margin-right: 440px;
+}
+
+.Confirm {
+    margin-left: 400px;
+    margin-top: -20px;
+    margin-bottom:25px;
+}
+
+.selected {
+    display: inline-block;
+    position: relative;
+}
+
+.selected::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust this value as needed */
+    left: 0;
+    width: 60%;
+    height: 2px;
+    background-color: #365486;
+    margin-bottom: -10px !important;
+    margin-left: 150px !important;
+}
+
+.selected2 {
+    display: inline-block;
+    position: relative;
+}
+
+
+.selected2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust this value as needed */
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: #365486;
+    margin-bottom: -10px !important;
+    margin-left: 30px !important;
+}
+.selected h2 {
+    margin-bottom: 5px; 
+}
+
+.custom-text {
+    font-size: 25px;
+    color: #365486;
+    margin-left: 170px;
+    margin-right: 170px;
+    margin-bottom: -0px !important;
+}
+
+li {
+    list-style-type: none;
 }
